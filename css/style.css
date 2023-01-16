@@ -1,5 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*Стилизация меню сайта*/
+.page_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #25b0f5;
+}
+
+.menu_logo{
+    max-width: 25%;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu_logo img{
+    width: 45%;
+    height: 90%;
+    transition: 0.5s;
+}
+.menu_logo img:hover{
+    transform: scale(1.03);
+}
+
+.menu_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.menu_item{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.menu_item:hover{
+    text-shadow: 0 0 20px orange;
+    transform: scale(1.05);
 }
